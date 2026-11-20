@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Log — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark">LP</span><div><h1>LEONIDA PLATINUM LOG</h1><p>GTA VI Trophy Guide &amp; Tracker — 55 trophies, every guide cited, offline</p></div></div>
+  <div class="progress" id="progressBox" aria-label="Progress"></div>
+  <div class="actions">
+    <button id="shieldBtn" type="button" title="Hide story trophy names until earned">Spoiler shield: ON</button>
+    <button id="exportBtn" type="button">Export</button>
+    <button id="importBtn" type="button">Import</button>
+    <input id="importFile" type="file" accept=".json,application/json" hidden>
+    <button id="shareBtn" type="button">Copy share link</button>
+    <span class="saved" id="savedNote">Saved in this browser</span>
+  </div>
+</header>
+<div class="audit" id="auditStrip" aria-label="Audit"></div>
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-view="tracker" class="active">Tracker</button>
+  <button type="button" data-view="roadmap">Roadmap</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="sources">Sources</button>
+</nav>
+<main>
+  <section id="view-tracker" class="view">
+    <div class="tracker">
+      <div class="listcol">
+        <div class="filters" id="filterBar"></div>
+        <div class="searchrow"><input id="searchBox" type="search" placeholder="Search trophy name or description…" aria-label="Search trophies"><select id="sortBox" aria-label="Sort"><option value="roadmap">Sort: roadmap order</option><option value="name">Sort: name A–Z</option><option value="grade">Sort: grade</option><option value="stage">Sort: stage</option></select></div>
+        <ul class="tlist" id="trophyList"></ul>
+      </div>
+      <div class="detail" id="detailPane"></div>
+      <aside class="rail" id="sideRail"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view" hidden>
+    <div class="roadmap" id="roadmapPane"></div>
+  </section>
+  <section id="view-missables" class="view" hidden>
+    <div class="missables" id="missablesPane"></div>
+  </section>
+  <section id="view-sources" class="view" hidden>
+    <div class="sources" id="sourcesPane"></div>
+  </section>
+</main>
+<footer><p>Leonida Platinum Log — a fan-made tracker. Grand Theft Auto VI and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar. Trophy names and descriptions are shown as PlayStation publishes them; every guide step is written for this guide and cites its source. Works fully offline — no network requests. Sources read 20 Nov 2026.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
